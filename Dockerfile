@@ -2,7 +2,7 @@ FROM nextcloud:apache
 
 ENV NEXTCLOUD_UPDATE=1
 
-mkdir -p /usr/share/man/man1 \
+RUN mkdir -p /usr/share/man/man1 \
     && apt-get update && apt-get install -y \
         supervisor \
         ffmpeg \
