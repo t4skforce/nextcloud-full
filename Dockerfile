@@ -1,5 +1,12 @@
 FROM nextcloud:stable
 
+########################################
+#               Build                  #
+########################################
+ENV VERSION ""
+ENV DOWNLOADURL ""
+########################################
+
 ENV NEXTCLOUD_UPDATE=1
 
 RUN mkdir -p /usr/share/man/man1 \
