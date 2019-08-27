@@ -3,8 +3,8 @@ FROM nextcloud:stable
 ########################################
 #               Build                  #
 ########################################
-ENV VERSION "16.0.3"
-ENV DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-16.0.3.tar.bz2"
+ENV VERSION "16.0.4"
+ENV DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-16.0.4.tar.bz2"
 ########################################
 
 ENV NEXTCLOUD_UPDATE=1
