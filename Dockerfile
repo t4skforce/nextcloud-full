@@ -3,8 +3,8 @@ FROM nextcloud:stable
 ########################################
 #               Build                  #
 ########################################
-ENV VERSION "21.0.0"
-ENV DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-21.0.0.tar.bz2"
+ENV VERSION "21.0.1"
+ENV DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-21.0.1.tar.bz2"
 ########################################
 
 ENV NEXTCLOUD_UPDATE=1
