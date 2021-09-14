@@ -2,8 +2,6 @@ name: dockerhub-publish
 
 on:
   push:
-    tags:
-      - '*'
     tags-ignore:
       - 'latest'
 
