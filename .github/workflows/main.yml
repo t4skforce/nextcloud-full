@@ -1,4 +1,4 @@
-name: dockerhub-publish
+name: docker-build-push
 
 on:
   push:
