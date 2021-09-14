@@ -3,7 +3,7 @@ name: dockerhub-tag
 on:
   push:
     tags:
-      - *
+      - '*'
 
 jobs:
   docker:
