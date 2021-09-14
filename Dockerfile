@@ -19,6 +19,7 @@ RUN mkdir -p /usr/share/man/man1 \
         libkrb5-dev \
         smbclient \
         libsmbclient-dev \
+        inotify-tools \
     && rm -rf /var/lib/apt/lists/* \
     && docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
     && docker-php-ext-install bz2 gmp imap \
