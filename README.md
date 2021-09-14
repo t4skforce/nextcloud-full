@@ -1,5 +1,7 @@
 # nextcloud-full
 
+[![dockerhub-publish](https://github.com/t4skforce/nextcloud-full/actions/workflows/dockerhub-publish.yml/badge.svg)](https://github.com/t4skforce/nextcloud-full/actions/workflows/dockerhub-publish.yml)
+
 The `full` Dockerfile adds dependencies for all optional packages suggested by nextcloud that may be needed for some features (e.g. Video Preview Generation), as stated in the [Administration Manual](https://docs.nextcloud.com/server/12/admin_manual/installation/source_installation.html).
 
 NOTE: The Dockerfile does not install the LibreOffice package (line is commented), because it would increase the generated Image size by approximately 500 MB. In order to install it, simply uncomment the 13th line of the Dockerfile.  
