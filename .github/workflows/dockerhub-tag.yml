@@ -1,4 +1,4 @@
-name: dockerhub-tag
+name: dockerhub-publish
 
 on:
   push:
