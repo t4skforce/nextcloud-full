@@ -1,6 +1,7 @@
 # nextcloud-full
 
-[![dockerhub-publish](https://github.com/t4skforce/nextcloud-full/actions/workflows/dockerhub-publish.yml/badge.svg)](https://github.com/t4skforce/nextcloud-full/actions/workflows/dockerhub-publish.yml)
+[![docker-build-push](https://github.com/t4skforce/nextcloud-full/actions/workflows/main.yml/badge.svg)](https://github.com/t4skforce/nextcloud-full/actions/workflows/main.yml)
+
 
 The `full` Dockerfile adds dependencies for all optional packages suggested by nextcloud that may be needed for some features (e.g. Video Preview Generation), as stated in the [Administration Manual](https://docs.nextcloud.com/server/12/admin_manual/installation/source_installation.html).
 
