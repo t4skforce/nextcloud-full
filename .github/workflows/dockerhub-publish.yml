@@ -4,6 +4,8 @@ on:
   push:
     tags:
       - '*'
+    tags-ignore:
+      - 'latest'
 
 jobs:
   docker:
@@ -21,9 +23,22 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - uses: actions/checkout@v2
+      -
+        name: Login to GitHub Container Registry
+        uses: docker/login-action@v1 
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      -
+        name: Login to GitHub Container Registry
+        uses: docker/login-action@v1 
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - 
-        name: Set env
+        name: Extract branch name
         run: echo "RELEASE_VERSION=${GITHUB_REF##*/}" >> $GITHUB_ENV
       -
         name: Build and push
@@ -31,4 +46,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: t4skforce/nextcloud-full:${{ env.RELEASE_VERSION }}
+          tags: |
+            t4skforce/nextcloud-full:latest
+            t4skforce/nextcloud-full:${{ env.RELEASE_VERSION }}
+            ghcr.io/t4skforce/nextcloud-full:latest
+            ghcr.io/t4skforce/nextcloud-full:${{ env.RELEASE_VERSION }}
