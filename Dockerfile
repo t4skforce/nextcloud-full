@@ -5,7 +5,7 @@ FROM nextcloud:stable
 ########################################
 ARG VERSION "22.2.0"
 ARG DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-22.2.0.tar.bz2"
-ARG BUILD_DATE=""
+ARG BUILD_DATE="20211004"
 ########################################
 
 ENV NEXTCLOUD_UPDATE=1
