@@ -3,8 +3,9 @@ FROM nextcloud:stable
 ########################################
 #               Build                  #
 ########################################
-ENV VERSION "22.2.0"
-ENV DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-22.2.0.tar.bz2"
+ARG VERSION "22.2.0"
+ARG DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-22.2.0.tar.bz2"
+ARG BUILD ""
 ########################################
 
 ENV NEXTCLOUD_UPDATE=1
