@@ -5,8 +5,24 @@ FROM nextcloud:stable
 ########################################
 ARG VERSION "22.2.0"
 ARG DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-22.2.0.tar.bz2"
-ARG BUILD_DATE="20211004"
+ARG BUILD_DATE=""
 ########################################
+
+# Basic build-time metadata as defined at http://label-schema.org
+LABEL org.label-schema.schema-version="1.0" \
+    org.label-schema.build-date=${BUILD_DATE} \
+    org.label-schema.docker.dockerfile="/Dockerfile" \
+    org.label-schema.license="AGPL-3.0 License" \
+    org.label-schema.name="nextcloud-full" \
+    org.label-schema.vendor="t4skforce" \
+    org.label-schema.version="Nextcloud v${NEXTCLOUD_VERSION}" \
+    org.label-schema.description="A safe home for all your data. Access & share your files, calendars, contacts, mail & more from any device, on your terms." \
+    org.label-schema.url="https://github.com/t4skforce/nextcloud-full" \
+    org.label-schema.vcs-type="Git" \
+    org.label-schema.vcs-url="https://github.com/t4skforce/nextcloud-full.git" \
+    maintainer="t4skforce" \
+    Author="t4skforce"
+
 
 ENV NEXTCLOUD_UPDATE=1
 
