@@ -3,8 +3,8 @@ FROM nextcloud:stable
 ########################################
 #               Build                  #
 ########################################
-ARG VERSION "22.2.0"
-ARG DOWNLOADURL "https://download.nextcloud.com/server/releases/nextcloud-22.2.0.tar.bz2"
+ARG VERSION "21.0.4"
+ARG DOWNLOADURL "https://github.com/nextcloud/docker"
 ARG BUILD_DATE="20211005"
 ########################################
 
