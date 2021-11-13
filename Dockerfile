@@ -5,7 +5,7 @@ FROM nextcloud:stable
 ########################################
 ARG VERSION "22.2.0"
 ARG DOWNLOADURL "https://github.com/nextcloud/docker"
-ARG BUILD_DATE="2021-11-06T22:21:21Z"
+ARG BUILD_DATE="2021-11-13T22:15:39Z"
 ########################################
 
 # Basic build-time metadata as defined at http://label-schema.org
