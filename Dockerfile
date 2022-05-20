@@ -3,7 +3,7 @@ FROM nextcloud:stable
 ########################################
 #               Build                  #
 ########################################
-ARG VERSION "23.0.4"
+ARG VERSION "23.0.5"
 ARG DOWNLOADURL "https://github.com/nextcloud/docker"
 ARG BUILD_DATE="2022-05-20T22:15:20Z"
 ########################################
